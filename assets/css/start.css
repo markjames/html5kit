@@ -1,0 +1,36 @@
+/* @description
+
+Site Styles
+
+*/
+
+/* @group Units */
+.unit:after, .group:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.unit, .group { display: inline-block; }
+* html .unit, * html .group { height: 1%; }
+.unit, .group { display: block; }
+/* @end */
+
+/* @group Skiplinks */
+#skip-links {
+	/* Hide, but not from screen-readers */ 
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px, 1px, 1px, 1px);
+}
+/* @end */
+
+body {
+	color: #42413b;
+	font-size: 87.5%; /* 14px */
+	line-height: 1.57; /* 22px */
+	-webkit-font-smoothing: antialiased;
+}
+h1,h2,h3 {
+	color: #3E3D38;
+	font-weight: bold;
+	letter-spacing: -1px;
+}
+h4,h5,h6,h1 strong,h2 strong,h3 strong,h4 strong,h5 strong,h6 strong {
+	color: #3E3D38;
+}
