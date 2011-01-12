@@ -1,15 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
 <!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if IE 7 ]> <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]> <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]> <html lang="en" class="no-js ie9"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
-<head>
+<head xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:og="http://ogp.me/ns#">
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta http-equiv="imagetoolbar" content="no">
 
-	<!-- Meta -->
+	<!-- Standard Metadata -->
 	<title>HTML5 Test Page (all elements)</title>
 	<meta name="description" content="">
 	<meta name="author" content="Mark James (http://mark.james.name)">
@@ -17,7 +17,58 @@
 	<meta name="copyright" content="">
 	<meta name="robots" content="all">
 	<meta name="viewport" content="width=device-width; initial-scale=1.0;">
+	
+	<!-- Dublin Core Metadata -->
+	<meta name="DC.identifier" content="http://example.com" />
+	<meta name="DC.creator" lang="en" content="Mark James">
+	<meta name="DC.date.created" lang="en" content="2011-01-12">
+	<meta name="DC.date.modifed" lang="en" content="2005-01-12">
+	<meta name="DC.format" lang="en" content="text/html">
+	<meta name="DC.language" content="en">
+	<meta name="DC.coverage" lang="en" content="UK">
+	<meta name="DC.publisher" lang="en" content="Mark James" />
+	<meta name="DC.rights.copyright" lang="en" content="">
 
+	<!-- eGMS Metadata -->
+	<meta name="eGMS.status" lang="en" content="V1.0 Public Consumption">
+	<meta name="eGMS.accessibility" scheme="WCAG" content="Double-A">
+
+	<meta name="eGMS.Subject.service" content="General information (museums, galleries)" scheme="eGMS.LGSL">
+	<meta name="eGMS.Subject.service" content="Archives" scheme="eGMS.LGSL">
+	<meta name="eGMS.subject.keyword" content="archives museum;history;Archives;archives history;cultural;Museums and galleries;Local History Societies;Local History;Museums;libraries archives"       scheme="LGCL" />
+	<meta name="eGMS.Subject.category" content="Culture and creativity" scheme="GCL" />
+	<meta name="eGMS.Subject.category" content="Museums and galleries" scheme="GCL" />
+	<meta name="eGMS.Subject.category" content="Heritage" scheme="GCL" />
+	<meta name="eGMS.Subject.category" content="Arts, recreation and travel" scheme="GCL" />
+	<meta name="eGMS.Subject.category" content="Libraries and archives" scheme="GCL" />
+	<meta name="eGMS.Subject.category" content="Guided walks" scheme="IPSV" />
+	<meta name="eGMS.Subject.category" content="Archives" scheme="IPSV">
+	<meta name="eGMS.Subject.category" content="Art galleries" scheme="IPSV">
+	<meta name="eGMS.Subject.category" content="Local history" scheme="IPSV">
+	<meta name="eGMS.Subject.category" content="Archives" scheme="LGCL">
+	<meta name="eGMS.Subject.category" content="Local History and heritage" scheme="LGCL">
+	<meta name="eGMS.Subject.category" content="Culture" scheme="LGCL">
+	<meta name="eGMS.Subject.category" content="Museums and galleries" scheme="LGCL">
+	<meta name="eGMS.Subject.category" content="Leisure and culture" scheme="LGCL">
+
+	<!-- Open Graph Metadata -->
+	<meta property="og:site_name" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:type" content="website"><!-- http://bit.ly/cyzaOm -->
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+
+	<!-- Navigation -->
+	<link rel="home" href="/">
+	<link rel="contents" href="../" title="">
+	<link rel="chapter" href="../" title="">
+	<link rel="index" href="../" title="">
+	<link rel="start" href="" title="">
+	<link rel="prev" href="" title="">
+	<link rel="next" href="" title="">
+
+	<!-- Icons -->
 	<link rel="shortcut icon" href="/favicon.ico">
 	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 	
@@ -37,6 +88,20 @@
 		section.intro {
 			background-color: #E0E0E0;
 			padding: 1em 1em 1px 1em;
+		}
+		h2, #headings-above-paragraphs h2:first-child {
+			color: #3D6390;
+			border-top: 6px solid #DDD;
+			margin-top: 1.5em;
+			padding-top: 1em;
+			margin-bottom: 1em;
+		}
+		hgroup ~ h2, hgroup h2, #headings-above-paragraphs h2 {
+			padding-top: 0;
+			margin-top: 0.9em;
+			margin-bottom: 0.2em;
+			color: #3E3D38;
+			border: none;
 		}
 	</style>
 
@@ -90,32 +155,21 @@
 								b
 								
 								bdo
-								blockquote
 
 								canvas
 								caption
 								cite
-								code
-								command
 								datalist
-								del
-								details
-								dfn
 
 								embed
 								fieldset
-								figcaption
-								figure
 								footer
 								form
 
 								header
-								i
 								iframe
 
 								input
-								ins
-								kbd
 								keygen
 								label
 								legend
@@ -123,7 +177,6 @@
 								link
 
 								mark
-								menu
 								meta
 								meter
 								nav
@@ -134,7 +187,6 @@
 								output
 								param
 								pre
-								progress
 								q
 								rp
 								rt
@@ -146,14 +198,11 @@
 								small
 								source
 								
-								sub
 								summary
-								sup
 								
 								time
 								title
 								track*
-								var
 								</p>
 
 							</section>
@@ -184,11 +233,6 @@
 								<!-- p, wbr, br -->
 								<p>For the &lt;wbr&gt; element: Lopadotemachoselachogaleokranioleipsanodrim<wbr>hypotrimmatosilphioparaomelitokatakechymenokichlepikossyphophattoperisteralektryonoptekephallio<wbr>kigklopeleiolagoiosiraiobaphetraganopterygon in a small caf&eacute; in Llanfair<wbr>pwllgwyngyllgogerychwyrndrobwllllanty<wbr>siliogogogoch. Lorem ipsum dolor sit amet<br> consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore<br>et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
 
-
-								<!-- p, img -->
-								<img src ="http://placehold.it/120/006EC4/FFFFFF&amp;text=!" width="120" height="120" alt="Example Image">
-
-								<p><img src ="http://placehold.it/12/006EC4/FFFFFF&amp;text=!" width="12" height="12" alt="Example Image"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <img src ="http://placehold.it/12/006EC4/FFFFFF&amp;text=!" width="12" height="12" alt="Example Image"> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 							</section>
 							
 							<section>
@@ -222,6 +266,44 @@
 								<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor</h5>
 								<h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor</h6>
 
+							</section>
+							
+							<section>
+								<h2>Images and Figures</h2>
+								
+								<h3>Images in/around content</h3>
+
+								<p>Lorem <span>ipsum dolor nato</span> sit amet <strong>strong text</strong>, <em>emphasis consectetur adipisicing elit</em>, <a href="http://www.example.com">link</a>, <cite>Citation</cite>, <code>Inline Code</code> , <abbr title="Cascading Style Sheets">CSS</abbr> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+								<!-- p, img -->
+								<img src ="http://placehold.it/120/006EC4/FFFFFF&amp;text=!" width="120" height="120" alt="Example Image">
+
+								<p><img src ="http://placehold.it/12/006EC4/FFFFFF&amp;text=!" width="12" height="12" alt="Example Image"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <img src ="http://placehold.it/12/006EC4/FFFFFF&amp;text=!" width="12" height="12" alt="Example Image"> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+								<h3>Figures</h3>
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+								<figure>
+									<img src="http://placehold.it/200x300/006EC4/FFFFFF&amp;text=FIGURE" alt="Placeholder image">
+									<figcaption><strong>Figure caption:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</figcaption>
+								</figure>
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+								<p>In <a href="#figure-1">listing 4</a> we see the primary core interface
+								API declaration.</p>
+
+								<figure id="figure-1">
+									<figcaption>Listing 4. The primary core interface API declaration.</figcaption>
+<pre><code>class Bomb {
+	boolean setup( someone:Cats, main:Screen ) {
+		(main as Screen).turnOn();
+	}
+}</code></pre>
+								</figure>
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 							</section>
 
 							<!-- section -->
@@ -419,7 +501,7 @@ and another</pre>
 								</ul>
 							</section>
 							
-							<section>
+							<section id="headings-above-paragraphs">
 								
 								<h2>Headings above paragraphs</h2>
 
@@ -531,49 +613,155 @@ and another</pre>
 
 							</section>
 
+							<section class="progress window">
+								<h2>Details &amp; Menus</h2>
+
+								<!-- details, progress -->
+								<h3>Open details</h3>
+								<details open="open">
+									<summary>Copying… <progress max="375505392" value="97543282"></progress> 25%</summary>
+									<dl>
+										<dt>Transfer rate:</dt>
+											<dd>452KB/s</dd>
+										<dt>Local filename:</dt>
+											<dd>/home/kittens.m4v</dd>
+										<dt>Remote filename:</dt>
+											<dd>/var/www/lectures/kittens.m4v</dd>
+										<dt>Duration:</dt>
+											<dd>01:16:27</dd>
+										<dt>Dimensions:</dt>
+											<dd>320×240</dd>
+									</dl>
+								</details>
+								
+								<h3>Closed details</h3>
+								<details>
+									<summary>Closed details: Copying… <progress max="375505392" value="97543282"></progress> 25%</summary>
+									<dl>
+										<dt>Transfer rate:</dt>
+											<dd>452KB/s</dd>
+										<dt>Local filename:</dt>
+											<dd>/home/kittens.m4v</dd>
+										<dt>Remote filename:</dt>
+											<dd>/var/www/lectures/kittens.m4v</dd>
+										<dt>Duration:</dt>
+											<dd>01:16:27</dd>
+										<dt>Dimensions:</dt>
+											<dd>320×240</dd>
+									</dl>
+								</details>
+								
+								<!-- menu, command -->
+								<h3>Toolbar Menu</h3>
+								<menu type="toolbar">
+									<command type="command" label="Command">
+									<command type="command" disabled="disabled" label="Command (Disabled)">
+
+									<command type="checkbox" checked="checked" label="Checkbox (Checked)">
+									<command type="checkbox" label="Checkbox (Unchecked)">
+
+									<command type="radio" radiogroup="alignment" checked="checked" label="Radiobutton (Checked)">
+									<command type="radio" radiogroup="alignment" disabled="disabled" label="Radiobutton (Disabled)">
+									<command type="radio" radiogroup="alignment" label="Radiobutton (Unchecked)">
+										
+									<menu label="Edit">
+										<button type="button">Copy</button>
+										<button type="button">Cut</button>
+										<button type="button">Paste</button>
+									</menu>
+								</menu>
+
+								<h3>Context Menu</h3>
+								<menu type="context">
+									<command type="command" checked="checked" label="Left">
+										
+									<option value="" disabled="disabled">-</option>
+										
+									<command type="checkbox" checked="checked" label="Checked">
+									<command type="checkbox" label="Unchecked">
+										
+									<hr>
+
+									<command type="radio" radiogroup="alignment" checked="checked" label="Left">
+									<command type="radio" radiogroup="alignment" label="Center">
+									<command type="radio" radiogroup="alignment" label="Right">
+								</menu>
+
+							</section>
+
 							<section>
 								
 								<h2>Google Rich Snippets (Microdata)</h2>
 								
+								<h3>Event Rich Snippet</h3>
+
 								<!-- Event -->
 								<div itemscope itemtype="http://data-vocabulary.org/Event">
-									<a href="http://www.example.com/events/spinaltap" itemprop="url" ><span itemprop="summary">Spinal Tap</span></a>
-									<img itemprop="photo" src="http://placehold.it/16x16">
+									<h4><a href="http://www.example.com/events/spinaltap" itemprop="url" ><span itemprop="summary">Spinal Tap</span></a></h4>
 
-									<span itemprop="description">After their highly-publicized search for a new drummer, Spinal Tap kicks off their latest comeback tour with a San Francisco show.</span>
+									<img itemprop="photo" src="http://placehold.it/400x150">
 
-									When:
-									<time itemprop="startDate" datetime="2009-10-15T19:00-08:00">Oct 15, 7:00PM</time>—
-									<time itemprop="endDate" datetime="2009-10-15T19:00-08:00">Oct 15, 9:00PM</time>
-
-									Where:
-									<span itemprop="location" itemscope itemtype="http://data-vocabulary.org/Organization">
-										<span itemprop="name">Warfield Theatre</span>
-										<span itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
-											<span itemprop="street-address">982 Market St</span>, 
-											<span itemprop="locality">San Francisco</span>, 
-											<span itemprop="region">CA</span>
-										</span>
-										<span itemprop="geo" itemscope itemtype="http://data-vocabulary.org/​Geo">
-											<meta itemprop="latitude" content="37.774929">
-											<meta itemprop="longitude" content="-122.419416">
-										</span>
-									</span>
-
-									Category: <span itemprop="eventType">Concert</span> 
+									<div class="excerpt" itemprop="description">
+										<p>After their highly-publicized search for a new drummer, Spinal Tap kicks off their latest comeback tour with a San Francisco show.</p>
+									</div>
+									
+									<div class="meta">
+										
+										<p class="dates">
+											When:
+											<time itemprop="startDate" datetime="2009-10-15T19:00-08:00">Oct 15, 7:00PM</time>—
+											<time itemprop="endDate" datetime="2009-10-15T19:00-08:00">Oct 15, 9:00PM</time>
+										</p>
+										
+										<p class="address">
+											Where:
+											<span itemprop="location" itemscope itemtype="http://data-vocabulary.org/Organization">
+												<span itemprop="name">Warfield Theatre</span>
+												<span itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
+													<span itemprop="street-address">982 Market St</span>, 
+													<span itemprop="locality">San Francisco</span>, 
+													<span itemprop="region">CA</span>
+												</span>
+												<span itemprop="geo" itemscope itemtype="http://data-vocabulary.org/​Geo">
+													<meta itemprop="latitude" content="37.774929">
+													<meta itemprop="longitude" content="-122.419416">
+												</span>
+											</span>
+										</p>
+										
+										<p class="category">
+											Category: <span itemprop="eventType">Concert</span> 
+										</p>
+									</div>
 								</div>
+
+								<h3>Organisation Rich Snippet</h3>
 
 								<!-- Organisation -->
 								<div itemscope itemtype="http://data-vocabulary.org/Organization"> 
-									<span itemprop="name">L’Amourita Pizza</span>
-									Located at 
-									<span itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
-										<span itemprop="street-address">123 Main St</span>, 
-										<span itemprop="locality">Albuquerque</span>, 
-										<span itemprop="region">NM</span>.
-									</span>
-									Phone: <span itemprop="tel">206-555-1234</span>.
-									<a href="http://www.example.com" itemprop="url">http://pizza.example.com</a>.
+									<h4 itemprop="name">L’Amourita Pizza</h4>
+									
+									<div class="meta">
+										
+										<p class="address">
+											Located at 
+											<span itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
+												<span itemprop="street-address">123 Main St</span>, 
+												<span itemprop="locality">Albuquerque</span>, 
+												<span itemprop="region">NM</span>.
+											</span>
+										</p>
+										
+										<p>
+											<span class="tel">Phone: <span itemprop="tel">206-555-1234</span><br>
+											<span class="url"><a href="http://www.example.com" itemprop="url">http://pizza.example.com</a>.</span>
+										</p>
+
+									</div>
+									
+									<div class="excerpt">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									</div>
 								</div>
 
 								<!-- Person -->
@@ -632,6 +820,8 @@ and another</pre>
 							<section>
 								<h2>Other</h2>
 
+								<!-- map, area -->
+								<h3>Image Map</h3>
 								<img src ="http://placehold.it/400x200/006EC4/FFFFFF&amp;text=IMAGE%20MAP%20EXAMPLE" width="400" height="200" alt="Example Image Map" usemap="#example-image-map">
 
 								<map name="example-image-map">
