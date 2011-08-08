@@ -22,8 +22,8 @@ Site Styles
 
 body {
 	color: #42413b;
-	font-size: 87.5%; /* 14px */
-	line-height: 1.57; /* 22px */
+	/* font-size: 87.5%; /* 14px */
+	/* line-height: 1.57; /* 22px */
 	-webkit-font-smoothing: antialiased;
 }
 h1,h2,h3 {

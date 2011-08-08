@@ -35,7 +35,7 @@
 
 	<meta name="eGMS.Subject.service" content="General information (museums, galleries)" scheme="eGMS.LGSL">
 	<meta name="eGMS.Subject.service" content="Archives" scheme="eGMS.LGSL">
-	<meta name="eGMS.subject.keyword" content="archives museum;history;Archives;archives history;cultural;Museums and galleries;Local History Societies;Local History;Museums;libraries archives"       scheme="LGCL" />
+	<meta name="eGMS.subject.keyword" content="archives museum;history;Archives;archives history;cultural;Museums and galleries;Local History Societies;Local History;Museums;libraries archives"		scheme="LGCL" />
 	<meta name="eGMS.Subject.category" content="Culture and creativity" scheme="GCL" />
 	<meta name="eGMS.Subject.category" content="Museums and galleries" scheme="GCL" />
 	<meta name="eGMS.Subject.category" content="Heritage" scheme="GCL" />
@@ -77,6 +77,7 @@
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/forms.css">
 	<link rel="stylesheet" href="assets/css/start.css">
 	
 	<style>
@@ -151,15 +152,8 @@
 								<p><strong>&hellip;apart from the following:</strong>
 								article
 								aside
-								
-								b
-								
-								bdo
 
-								canvas
 								caption
-								cite
-								datalist
 
 								embed
 								fieldset
@@ -167,10 +161,8 @@
 								form
 
 								header
-								iframe
 
 								input
-								keygen
 								label
 								legend
 
@@ -186,7 +178,6 @@
 
 								output
 								param
-								pre
 								q
 								rp
 								rt
@@ -284,9 +275,11 @@
 
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-								<figure>
-									<img src="http://placehold.it/200x300/006EC4/FFFFFF&amp;text=FIGURE" alt="Placeholder image">
-									<figcaption><strong>Figure caption:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</figcaption>
+								<figure class="image">
+									<div>
+										<img src="http://placekitten.site/200/300" alt="Placeholder image">
+										<figcaption><strong>Figure caption:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</figcaption>
+									</div>
 								</figure>
 
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -363,6 +356,14 @@ and another</pre>
 								I am <var>the var tag</var> example<br>
 								</p>
 
+								<ul>
+									<li>User <bdi>jcranmer</bdi>: 12 posts.
+									<li>User <bdi>hober</bdi>: 5 posts.
+									<li>User <bdi>إيان</bdi>: 3 posts.
+								</ul>
+								
+								<p><bdo dir="rtl">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</bdo></p>
+
 							</section>
 
 							<section>
@@ -416,6 +417,9 @@ and another</pre>
 									<li>Ordered list</li>
 									<li>Ordered list</li>
 									<li>Ordered list</li>
+								</ol>
+								
+								<ol reversed>
 									<li>Ordered list</li>
 									<li>Ordered list</li>
 									<li>Ordered list</li>
@@ -575,6 +579,21 @@ and another</pre>
 											</select>
 											<p class="hint">This field has a hint</p>
 										</div>
+										
+										<div class="field">
+											<label for="field-fruit">Your favourite fruit:</label>
+											<input id="field-fruit" type="text" name="fruit" list="field-fruit-list">
+											<datalist id="field-fruit-list">
+												<option value="Blackberry">Blackberry</option>
+												<option value="Blackcurrant">Blackcurrant</option>
+												<option value="Blueberry">Blueberry</option>
+											</datalist>
+										</div>
+
+										<div class="field">
+											<label for="field-keygen">
+											<keygen name="key" id="field-keygen">
+										</div>
 
 										<div class="field">
 											<label>Radio Buttons</label>
@@ -604,8 +623,154 @@ and another</pre>
 										<div class="buttons">
 											<input id="fieldname" type="submit" class="submit" value="Submit">
 											<button>Button</button>
-											<input type="image" src="http://placehold.it/80x28/006EC4/FFFFFF&amp;text=IMAGE%20SUBMIT" alt="Image Submit" width="80" height="28">
+											<input type="image" src="http://placekitten.site/80/28" alt="Image Submit" width="80" height="28">
 										</div>
+
+									</fieldset>
+
+								</form>
+
+
+								<form id="form-2" action="#" method="get" accept-charset="utf-8">
+									<fieldset id="" class="layout">
+										<legend>Legend</legend>
+
+										<div class="field">
+											<label for="f1">Optional Text input:</label>
+											<input type="text" id="f1" value="input text">
+										</div>
+
+										<div class="field">
+											<label for="rt1">Required Text input:</label><input type="text" id="rt1" required>
+										</div>
+
+										<div class="field">
+											<label for="twp1">Text input with pattern requirement and placeholder:</label><input type="text" pattern="\d{5}(-\d{4})?" title="a US Zip code, with or without the +4 exension" placeholder="12345-6789"/></div>
+										<div class="field">
+											<label for="s1">Search input:</label><input type="search" id="s1" />
+										</div>
+										<div class="field">
+											<label for="e1">Email input:</label><input type="email" id="e1" />
+										</div>
+										<div class="field">
+											<label for="u1">URL input:</label><input type="url" id="u1" />
+										</div>
+										<div class="field">
+											<label for="pw">Password input:</label><input type="password" id="pw" value="password" />
+										</div>
+										<div class="field">
+											<label for="f2">Radio input:</label><input type="radio" id="f2" />
+										</div>
+										<div class="field">
+											<label for="f3">Checkbox input:</label><input type="checkbox" id="f3" />
+										</div>
+										<div class="field">
+											<label for="f4">Select field:</label><select id="f4"><option>Option 01</option><option>Option 02</option></select>
+										</div>
+										<div class="field">
+											<label for="f5">Textarea:</label><textarea id="f5" cols="30" rows="5" >Textarea text</textarea>
+										</div>
+										<div class="field">
+											<label for="f6">Input Button:</label> <input type="button" id="f6" value="button text" />
+										</div>
+										<div class="field">
+											<label for="f7">Submit Button:</label> <input type="submit" id="f7" value="button text" />
+										</div>
+
+										<div class="field field-50 field-first">
+											<label for="fieldname">Label <abbr class="required" title="Required">*</abbr></label>
+											<input id="fieldname" type="text" class="text" value="Text">
+											<p class="hint">This field has a hint</p>
+										</div>
+
+										<div class="field field-25">
+											<label for="fieldname">Label <abbr class="required" title="Required">*</abbr></label>
+											<input id="fieldname" type="text" class="text" value="Text">
+											<p class="hint">This field has a hint</p>
+										</div>
+
+										<div class="field field-25">
+											<label for="fieldname">Label <abbr class="required" title="Required">*</abbr></label>
+											<select id="fieldname">
+												<option>Select Box</option>
+											</select>
+											<p class="hint">This field has a hint</p>
+										</div>
+
+										<div class="field error field-75 field-first">
+											<label for="fieldname">Label <abbr class="required" title="Required">*</abbr></label>
+											<input id="fieldname" type="text" class="text" value="Text">
+										</div>
+
+										<div class="field error field-25">
+											<label>Radio Buttons</label>
+											<p class="hint">This field has a hint</p>
+											<div class="options">
+												<label><input type="radio" class="radio" name="radio[]" value="4"> Radio Option 4</label>
+												<label><input type="radio" class="radio" name="radio[]" value="5"> Radio Option 5</label>
+												<label><input type="radio" class="radio" name="radio[]" value="6"> Radio Option 6</label>
+											</div>
+										</div>
+
+										<div class="field error field-50 field-first">
+											<label>Radio Buttons</label>
+											<p class="hint">This field has a hint</p>
+											<div class="options">
+												<label><input type="radio" class="radio" name="radio[]" value="4"> Radio Option 4</label>
+												<label><input type="radio" class="radio" name="radio[]" value="5"> Radio Option 5</label>
+												<label><input type="radio" class="radio" name="radio[]" value="6"> Radio Option 6</label>
+											</div>
+										</div>
+
+										<div class="field error field-50">
+											<label>Checkboxes</label>
+											<p class="hint">This field has a hint</p>
+											<div class="options">
+												<label><input type="checkbox" class="checkbox" name="checkbox[]" value="4"> Checkbox Option 4</label>
+												<label><input type="checkbox" class="checkbox" name="checkbox[]" value="5"> Checkbox Option 5</label>
+												<label><input type="checkbox" class="checkbox" name="checkbox[]" value="6"> Checkbox Option 6</label>
+											</div>
+										</div>
+
+										<div class="field field-25 field-first">
+											<label for="fieldname">Label <abbr class="required" title="Required">*</abbr></label>
+											<textarea id="fieldname3" cols="30" rows="5">Textarea text</textarea>
+											<p class="hint">This field has a hint</p>
+										</div>
+
+										<div class="field field-25">
+											<label for="fieldname">Label <abbr class="required" title="Required">*</abbr></label>
+											<textarea id="fieldname3" cols="30" rows="5">Textarea text</textarea>
+											<p class="hint">This field has a hint</p>
+										</div>
+
+										<div class="field field-25">
+											<label for="fieldname">Label <abbr class="required" title="Required">*</abbr></label>
+											<textarea id="fieldname3" cols="30" rows="5">Textarea text</textarea>
+											<p class="hint">This field has a hint</p>
+										</div>
+
+										<div class="field field-25">
+											<label for="fieldname">Label <abbr class="required" title="Required">*</abbr></label>
+											<textarea id="fieldname3" cols="30" rows="5">Textarea text</textarea>
+											<p class="hint">This field has a hint</p>
+										</div>
+
+										<div class="field error field-100">
+											<label for="fieldname3">Label <abbr class="required" title="Required">*</abbr></label>
+											<textarea id="fieldname3" cols="30" rows="5">Textarea text</textarea>
+										</div>
+
+										<div class="field field-100">
+											<div class="options">
+												<label><input type="checkbox" class="checkbox" name="checkbox[]" value="4"> Checkbox Option 4</label>
+											</div>
+										</div>
+
+										<div class="buttons">
+											<input id="fieldname" type="submit" class="submit" value="submit">
+										</div>
+
 
 									</fieldset>
 
@@ -650,6 +815,13 @@ and another</pre>
 											<dd>320×240</dd>
 									</dl>
 								</details>
+								
+								<meter value="0"></meter> 
+								<meter value="1"></meter> 
+					         <meter min=".34" max=".41" value=".36"></meter>
+						         <meter min="50" max="250" low="100" high="200" value="120"></meter>
+					         <meter value=".5" optimum=".8"></meter>
+								<meter min="1024" max="10240" low="2048" high="8192" value="9216"></meter>
 								
 								<!-- menu, command -->
 								<h3>Toolbar Menu</h3>
@@ -699,7 +871,7 @@ and another</pre>
 								<div itemscope itemtype="http://data-vocabulary.org/Event">
 									<h4><a href="http://www.example.com/events/spinaltap" itemprop="url" ><span itemprop="summary">Spinal Tap</span></a></h4>
 
-									<img itemprop="photo" src="http://placehold.it/400x150">
+									<img itemprop="photo" src="http://placekitten.site/400/150">
 
 									<div class="excerpt" itemprop="description">
 										<p>After their highly-publicized search for a new drummer, Spinal Tap kicks off their latest comeback tour with a San Francisco show.</p>
@@ -822,15 +994,29 @@ and another</pre>
 
 								<!-- map, area -->
 								<h3>Image Map</h3>
-								<img src ="http://placehold.it/400x200/006EC4/FFFFFF&amp;text=IMAGE%20MAP%20EXAMPLE" width="400" height="200" alt="Example Image Map" usemap="#example-image-map">
+								<img src ="http://placekitten.site/400/200" width="400" height="200" alt="Example Image Map" usemap="#example-image-map">
 
 								<map name="example-image-map">
 									<area shape="rect" coords="0,0,82,126" href="#1" alt="Area One" />
 									<area shape="circle" coords="90,58,8" href="#2" alt="Area Two" />
 									<area shape="circle" coords="160,58,20" href="#3" alt="Area Three" />
 								</map>
+								
+								<!-- iframe -->
+								<h3>iFrame</h3>
+								<iframe src="iframe.html" height="200"></iframe>
+
+								<h3>Seamless iFrame</h3>
+								<iframe seamless src="iframe.html" height="200"></iframe>
+								
+								<h3>Canvas</h3>
+								
+								<canvas id="myCanvas" width="300" height="300">
+								Fallback content, in case the browser does not support Canvas.
+								</canvas>
+								
 							</section>
-						</div>
+
 
 		</div><!-- /#primary-content -->
 
@@ -854,6 +1040,18 @@ and another</pre>
 	<script src="js/dd_belatedpng.js?"></script>
 	<script>DD_belatedPNG.fix('');</script>
 	<![endif]-->
+	
+								
+	<script>
+	$('canvas').each(function(i) {
+		var context = $(this)[0].getContext('2d');
+		for(var i=300; i>0; i--) {
+			context.fillStyle = "rgba("+Math.round(Math.random())*255+","+Math.round(Math.random())*255+","+Math.round(Math.random())*255+",0.1)";
+			context.fillRect(i, i, Math.random()*100, Math.random()*100);
+		}
+	});
+	
+	</script>
 
 </body>
 </html>

@@ -1,0 +1,190 @@
+/* @description
+
+*/
+
+/* @group Clearfix */
+form .field:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+form .field { display: inline-block; }
+* html form .field { height: 1%; }
+form .field { display: block; }
+/* @end */
+
+fieldset {
+	padding: 1em;
+	margin: 0 0 1.5em 0;
+	border: 1px solid #CCC;
+}
+legend {
+	font-weight: bold;
+}
+
+.field label {
+
+}
+.field label .required, .field label .req {
+	color: red;
+	border: none;
+	vertical-align: super;
+	font-size: 0.7em;
+	font-style: italic;
+}
+
+.field .hint {
+	color: #777;
+	margin: 0.25em 0;
+}
+fieldset {
+	border-color: #CCC;
+}
+* html fieldset {
+	padding-top: 1em;
+}
+*+html fieldset {
+	padding-top: 1em;
+}
+* html legend {margin-left: -7px;}
+*+html legend {margin-left: -7px;}
+
+form .field, form .buttons {margin: 0 0 1.5em;}
+form .field label {display: block;}
+
+/* @group Radios and Checkboxes */
+.field .options label {
+	line-height: 1.4;
+	font-weight: normal;
+	margin-bottom: 0.4em;
+}
+* html .field .options label {
+	margin-bottom: 0.1em; /* Smaller bottom margin for IE */
+}
+*+html .field .options label{
+	margin-bottom: 0.1em; /* Smaller bottom margin for IE */
+}
+.field .options label {
+
+}
+input.radio, input.checkbox {vertical-align: top; margin-top: 0; margin-left: 0;}
+* html input.radio, * html input.checkbox {vertical-align: baseline;}
+*+html input.radio, *+html input.checkbox {vertical-align: baseline;}
+
+/* @end */
+
+input.text, input.password, textarea, select {margin: 0; vertical-align: baseline;}
+.error label { color: red;}
+.error .options label { color: #222; }
+
+/* @group Form with a gridded layout */
+.layout .text,
+.layout textarea,
+.layout select
+ { /* Modern browsers only, requires a fallback */
+	width: 100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-khtml-box-sizing: border-box;
+}
+.layout .field,
+.layout .field-100 {
+	float: left;
+	width: 100%;
+	clear: left;
+}
+* html .layout .field-100 .text,
+* html .layout .field-100 textarea {
+	width: 97%;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+*+html .layout .field-100 .text,
+*+html .layout .field-100 textarea {
+	width: 97%;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+.layout .field-25 {
+	float: left;
+	width: 24.25%;
+	margin-left: 1%;
+	clear: none;
+}
+* html .layout .field-25 .text,
+* html .layout .field-25 textarea {
+	width: 95%;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+*+html .layout .field-25 .text,
+*+html .layout .field-25 textarea {
+	width: 95%;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+.layout .field-50 {
+	float: left;
+	width: 49.5%;
+	margin-left: 1%;
+	clear: none;
+}
+* html .layout .field-50 .text,
+* html .layout .field-50 textarea {
+	width: 97%;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+*+html .layout .field-50 .text,
+*+html .layout .field-50 textarea {
+	width: 97%;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+.layout .field-75 {
+	float: left;
+	width: 74.75%;
+	margin-left: 1%;
+	clear: none;
+}
+* html .layout .field-75 .text,
+* html .layout .field-75 textarea {
+	width: 98%;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+*+html .layout .field-75 .text,
+*+html .layout .field-75 textarea {
+	width: 98%;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+.layout .field-first {
+	clear: left;
+	margin-left: 0%;
+}
+.layout .buttons {
+	clear: left;
+}
+
+/* @end */
+.horizontal label {
+	width: 33%;
+	float: left;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-khtml-box-sizing: border-box;
+	display: block;
+	margin-right: 2%;
+}
+.horizontal-two label {
+	width: 33%;
+	float: left;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-khtml-box-sizing: border-box;
+	display: block;
+	margin-right: 2%;
+}
